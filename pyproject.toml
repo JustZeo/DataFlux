@@ -1,0 +1,27 @@
+[project]
+name = "dataflux"
+version = "0.1.0"
+description = "A unified Python library for discovering, exploring, and loading datasets from multiple data providers."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "datasets>=5.0.0",
+    "huggingface-hub>=1.24.0",
+    "kaggle>=2.2.4",
+    "kagglehub>=1.0.2",
+    "polars>=1.43.0",
+    "pyarrow>=25.0.0",
+    "rich>=15.0.0",
+    "scikit-learn>=1.9.0",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+    "torchvision>=0.28.0",
+    "ucimlrepo>=0.0.7",
+    "vega-datasets>=0.9.0",
+    "wbgapi>=1.0.14",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
