@@ -1,9 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "dataflux"
 version = "0.1.0"
 description = "A unified Python library for discovering, exploring, and loading datasets from multiple data providers."
 readme = "README.md"
 requires-python = ">=3.14"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+keywords = [
+    "datasets",
+    "data",
+    "machine-learning",
+    "polars",
+    "huggingface",
+    "kaggle",
+    "uci",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+]
 dependencies = [
     "datasets>=5.0.0",
     "huggingface-hub>=1.24.0",
@@ -21,7 +49,21 @@ dependencies = [
     "wbgapi>=1.0.14",
 ]
 
+[project.urls]
+Homepage = "https://github.com/JustZeo/DataFlux"
+Repository = "https://github.com/JustZeo/DataFlux"
+Documentation = "https://justzeo.github.io/DataFlux/"
+Issues = "https://github.com/JustZeo/DataFlux/issues"
+Changelog = "https://justzeo.github.io/DataFlux/changelog/"
+
 [dependency-groups]
 dev = [
+    "mkdocs-material>=9.7.7",
     "pytest>=9.1.1",
 ]
+docs = [
+    "mkdocs-material>=9.6.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dataflux"]
