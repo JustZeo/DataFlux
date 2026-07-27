@@ -8,13 +8,13 @@
 ## Install with pip
 
 ```bash
-pip install dataflux
+pip install dataflux-core
 ```
 
 ## Install with uv
 
 ```bash
-uv add dataflux
+uv add dataflux-core
 ```
 
 ## Verify it worked

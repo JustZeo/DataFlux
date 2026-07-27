@@ -50,13 +50,13 @@ df = flux.pull(results[0])
 ## Installation
 
 ```bash
-pip install dataflux
+pip install dataflux-core
 ```
 
 or, if you're using [uv](https://github.com/astral-sh/uv):
 
 ```bash
-uv add dataflux
+uv add dataflux-core
 ```
 
 ---
