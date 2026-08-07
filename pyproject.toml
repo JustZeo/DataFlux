@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dataflux-core"
-version = "0.1.0"
+version = "0.1.1"
 description = "A unified Python library for discovering, exploring, and loading datasets from multiple data providers."
 readme = "README.md"
 requires-python = ">=3.14"
